@@ -1,0 +1,15 @@
+ribbon:
+  eureka:
+    enabled: false
+server:
+  port: 8080
+zuul:
+  routes:
+    movie-service:
+      url: http://localhost:8090
+logging:
+  level:
+    com.example.howtodoinjava: DEBUG
+spring:
+  application:
+    name: zuul-gateway
